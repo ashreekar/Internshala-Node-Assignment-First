@@ -1,0 +1,24 @@
+{
+  "name": "restapi",
+  "version": "1.0.0",
+  "description": "",
+  "keywords": [
+    "NodeJS",
+    "ExpressJS"
+  ],
+  "homepage": "https://github.com/ashreekar/Internshala-Node-Assignment-First#readme",
+  "bugs": {
+    "url": "https://github.com/ashreekar/Internshala-Node-Assignment-First/issues"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ashreekar/Internshala-Node-Assignment-First.git"
+  },
+  "license": "ISC",
+  "author": "Ashreek A R",
+  "type": "module",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
