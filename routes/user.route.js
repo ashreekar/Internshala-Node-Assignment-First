@@ -1,17 +1,22 @@
 import { Router } from "express";
+import {addUser} from "../controller/user.controller.js";
 
 const user = Router();
 
-user.route('/').post((req, res) => {
-    console.log("Users route")
-})
+user.route('/').post(addUser)
 
 user.route('/:id')
     .put((req, res) => {
         console.log("Users route")
+        res.json({
+            message: "OK"
+        })
     })
-    .delete(user.route('/').post((req, res) => {
+    .delete((req, res) => {
         console.log("Users route")
-    }))
+        res.json({
+            message: "OK"
+        })
+    })
 
 export { user };

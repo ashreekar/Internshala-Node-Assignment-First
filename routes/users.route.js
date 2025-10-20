@@ -1,13 +1,10 @@
 import { Router } from "express";
+import { getData, getSingleUserData } from "../controller/users.controller.js"
 
 const users = Router();
 
-users.route('/').get((req, res) => {
-    console.log("Users route")
-})
+users.route('/').get(getData);
 
-users.route('/:id').get((req, res) => {
-    console.log("Users route")
-})
+users.route('/:id').get(getSingleUserData);
 
 export { users };
