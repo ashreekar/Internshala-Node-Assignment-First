@@ -49,7 +49,11 @@ function deleteUser(req, res) {
     }
 
     const updateDUser = userData.filter(user => user.id != userId);
-    userData=updateDUser;
+
+    for (let i = 0; i < updateDUser.length; i++) {
+        userData[i]=updateDUser[i];
+    }
+    userData.pop();
     res.status(203).json({
         "message": "user updated"
     })
