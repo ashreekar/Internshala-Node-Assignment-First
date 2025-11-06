@@ -6,14 +6,20 @@ import fs from 'fs';
 const app = express();
 
 app.use(express.json());
+app.use(express.urlencoded({ extended: false }))
 
 app.use((req, res, next) => {
     fs.appendFile('logs.txt', `${Date.now()} ---> ${req.url} --->${req.method} ---> ${req.statusCode}\n`, (err, data) => {
+        if (err) {
+            return res.status(500).json({
+                message: "Error from server while tracking logs"
+            })
+        }
         next();
     });
 })
 
-app.use((req,res,next)=>{
+app.use((req, res, next) => {
     console.log("Request HIT");
     console.log("URL:", req.url);
     console.log("METHOD", req.method);
