@@ -1,3 +1,4 @@
+// custom User calss that simulates schema
 class User {
     constructor(firstName, lastName, age, hobby) {
         this.firstName = firstName;
