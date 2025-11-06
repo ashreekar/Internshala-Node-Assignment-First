@@ -60,3 +60,16 @@
 1762437147927 ---> /user/FMr-xO --->PUT ---> null
 1762437154638 ---> /user/FMr-xO --->PUT ---> null
 1762437179796 ---> /user/ --->POST ---> null
+1762439391595 ---> /users --->GET ---> null
+1762439545833 ---> /users/4 --->GET ---> null
+1762439702606 ---> /user --->POST ---> null
+1762439725761 ---> /user --->POST ---> null
+1762439766266 ---> /users/ --->GET ---> null
+1762439777132 ---> /users/UIOfJR --->GET ---> null
+1762439853538 ---> /user/UIOfJR --->PATCH ---> null
+1762439880763 ---> /user/ --->PATCH ---> null
+1762439890326 ---> /user/ --->POST ---> null
+1762439903202 ---> /users/ --->GET ---> null
+1762439928826 ---> /user/JakY8C --->POST ---> null
+1762439938701 ---> /user/JakY8C --->PATCH ---> null
+1762439971457 ---> /user/JakY8C --->DELETE ---> null

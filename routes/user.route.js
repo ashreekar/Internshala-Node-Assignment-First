@@ -7,7 +7,7 @@ const user = Router();
 user.route('/').post(validateAddUser, addUser)
 
 user.route('/:id')
-    .put(validateUpdateUser, updateUser)
+    .patch(validateUpdateUser, updateUser)
     .delete(deleteUser)
 
 export { user };
